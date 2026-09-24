@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #173b61;
+}
+
+header {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 35px 20px;
+    background-color: #1d436b;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 14px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.post {
+    padding: 10px;
+}
+
+.post img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+.post h2 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    padding-top: 8px;
+    margin-bottom: 12px;
+}
+
+.autor {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post p:not(.autor) {
+    clear: both;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.botoes {
+    margin-top: 12px;
+    display: flex;
+    gap: 5px;
+}
+
+.botoes button {
+    border: 1px solid #aaa;
+    background-color: white;
+    border-radius: 3px;
+    padding: 2px 7px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .posts {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        width: 95%;
+    }
+}
